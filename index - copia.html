@@ -44,7 +44,7 @@
             justify-content: center;
             gap: 10px;
             margin-bottom: 5px;
-            flex-wrap: wrap; /* Para que el logo no empuje al texto en celus chicos */
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -62,7 +62,7 @@
 
         h1 { 
             margin: 0; 
-            font-size: clamp(1.2rem, 5vw, 1.8rem); /* Tamaño dinámico según pantalla */
+            font-size: clamp(1.2rem, 5vw, 1.8rem); 
             color: #0f172a; 
             text-transform: uppercase; 
             letter-spacing: -0.5px;
@@ -78,7 +78,7 @@
         }
 
         .glossary-wrapper {
-            width: 95%; /* Ocupa casi todo el ancho en móviles */
+            width: 95%; 
             max-width: 650px;
             max-height: 70vh;
             overflow-y: auto;
@@ -92,7 +92,7 @@
 
         .section-title {
             padding: 15px 10px 5px 10px;
-            font-size: 0.85rem; /* Corregido para que sea legible */
+            font-size: 0.85rem; 
             font-weight: bold;
             text-transform: uppercase;
             color: #94a3b8;
@@ -157,7 +157,17 @@
         <div class="section-title">El Tablero (Los Datos)</div>
 
         <div class="card">
-            <span class="badge n-data">Dato Clave</span>
+            <span class="badge n-data">Dato</span>
+            <h3>Brecha</h3>
+            <p>Es la distancia que hay entre el dólar "oficial" y los dólares libres como el MEP o el Blue. Cuanto más grande es, más distorsionada está la economía.</p>
+            <div class="info-box">
+                <b>¿Para qué sirve?</b> Es el termómetro del lío económico. Te indica qué tan baratas o caras están las cosas según con qué dólar las mires. <br>
+                <b>¿Quién la mira?</b> Todos, porque tarde o temprano la brecha se cierra, y generalmente es hacia arriba.
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="badge n-data">Dato</span>
             <h3>Riesgo País</h3>
             <p>Es un indicador que mide el "miedo" que tienen afuera de prestarnos plata. Cuanto más <b>alto</b> es el número, <b>menos confianza</b> nos tienen y más riesgo ven de que Argentina no pague sus deudas.</p>
             <div class="info-box">
@@ -166,7 +176,17 @@
         </div>
 
         <div class="card">
-            <span class="badge n-data">Dato Clave</span>
+            <span class="badge n-data">Dato</span>
+            <h3>Carry Trade</h3>
+            <p>Es el famoso "bicicleteo". Vendes tus dólares, ponés los pesos a rendir en una tasa alta y, antes de que el dólar suba, volvés a comprar los verdes. Si sale bien, terminás con más dólares que al principio.</p>
+            <div class="info-box">
+                <b>¿Para qué sirve?</b> Para aprovechar ventanas de tiempo donde el dólar está quieto pero las tasas en pesos rinden mucho. <br>
+                <b>El riesgo:</b> Si el dólar "despierta" de golpe, te puede salir más caro de lo que ganaste y terminás perdiendo plata.
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="badge n-data">Dato</span>
             <h3>IPC (Inflación)</h3>
             <p>Es el número oficial que dice cuánto subieron los precios en promedio. Es tu punto de comparación: si tus ahorros no rinden más que el IPC, estás perdiendo contra el súper.</p>
             <div class="info-box">
@@ -175,7 +195,17 @@
         </div>
 
         <div class="card">
-            <span class="badge n-data">Dato Clave</span>
+            <span class="badge n-data">Dato</span>
+            <h3>Arbitraje</h3>
+            <p>En la jerga es "hacer el rulo". Es comprar algo donde está barato y venderlo donde está más caro en el mismo momento para ganarte la diferencia.</p>
+            <div class="info-box">
+                <b>¿Para qué sirve?</b> Para sacarle una tajada "gratis" al mercado aprovechando que el mismo activo tiene dos precios distintos en diferentes pantallas. <br>
+                <b>¿Cuándo usarlo?</b> En momentos de mucho caos o cambios de normas, donde los precios tardan unos segundos en emparejarse.
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="badge n-data">Dato</span>
             <h3>Tasa Real (Pasada y REM)</h3>
             <p>Es la ganancia "limpia" después de restar la inflación. El REM es la encuesta que hace el Banco Central para saber qué inflación esperan los expertos para los meses que vienen.</p>
             <div class="info-box">
@@ -184,7 +214,7 @@
         </div>
 
         <div class="card">
-            <span class="badge n-data">Dato Clave</span>
+            <span class="badge n-data">Dato</span>
             <h3>Tipo de Cambio Real</h3>
             <p>Compara el valor del dólar contra la inflación. Te dice si el dólar se quedó "atrasado" o "barato" respecto a cómo subió todo lo demás.</p>
             <div class="info-box">
@@ -216,14 +246,12 @@
             <span class="badge n1">Recomendado</span>
             <h3>Lecaps / Letras</h3>
             <p>Son promesas de pago del Gobierno a corto plazo. <br> Le prestás al Estado por unos meses a cambio de un interés que suele ganarle al plazo fijo común.<br>
-Cada lámina de Lecap tiene un Valor Nominal (VN). <br> Cuando el Estado lanza la letra, dice: "Al vencimiento, por cada lámina te voy a pagar $1 (o el monto que se fije) más todos los intereses que se capitalizaron a la fecha del vencimiento".<br>
-Ese monto final está escrito en las condiciones de emisión.<br> Vos ya sabés que si te quedás hasta el último día, el Tesoro te deposita exactamente esa guita. No hay sorpresas ahí.<br> <br>
-En el Plazo Fijo, si ponés la plata a 30 días la plata está "presa" hasta que venza el plazo.<br>
-Con las Lecaps, como son títulos que cotizan en la Bolsa (el "mercado secundario"), vos podés "Vender" en cualquier momento.<br> <br>
-Si las vendés antes, no te pagan la tasa exacta que prometieron al final, sino al precio que esté cotizando en ese momento
-.</p>
+            Cada lámina de Lecap tiene un Valor Nominal (VN). <br> Cuando el Estado lanza la letra, dice: "Al vencimiento, por cada lámina te voy a pagar $1 más todos los intereses que se capitalizaron".<br>
+            Ese monto final está escrito en las condiciones de emisión.<br> Vos ya sabés que si te quedás hasta el último día, el Tesoro te deposita exactamente esa guita.<br> <br>
+            A diferencia del Plazo Fijo, con las Lecaps podés "Vender" en cualquier momento en la Bolsa.<br> <br>
+            Si las vendés antes, no te pagan la tasa exacta que prometieron al final, sino al precio que esté cotizando en ese momento.</p>
             <div class="info-box">
-                <b>¿Quién lo usa?</b> El ahorrista y El banco que agarra la plata que vos dejás en tu caja de ahorro (que te paga 0%) o en un plazo fijo (que te paga, ponele, un 30% anual) y la mete en Lecaps que rinden un 35% o 40%. Esa diferencia es su ganancia..
+                <b>¿Quién lo usa?</b> El ahorrista y el banco que agarra la plata que vos dejás en tu caja de ahorro y la mete en Lecaps para ganar esa diferencia de tasa.
             </div>
         </div>
 
